@@ -29,7 +29,11 @@ public protocol ILineChartDataSet: ILineRadarChartDataSet
     ///
     /// **default**: 0.2
     var cubicIntensity: CGFloat { get set }
-    
+
+    var isDrawLineWithGradientEnabled: Bool { get set }
+
+    var gradientPositions: [CGFloat]? { get set }
+
     /// The radius of the drawn circles.
     var circleRadius: CGFloat { get set }
     
